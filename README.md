@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Traktion
 
-## Getting Started
+This is the web application for the Traktion app, where you can check-in with your friends to document your progress and stay motivated.
 
-First, run the development server:
+## Installation
 
-```bash
+Ensure that you have the lastest version of Node.js installed on your machine.
+
+You can verify the version by running the following commands
+
+```
+node -v
+```
+
+```
+npm -v
+```
+
+Next close the project
+
+```
+git clone git@github.com:TerraNexa/Traktion.git
+```
+
+Afterwards you can initialize the project by installing are the required dependencies
+
+```
+npm install
+```
+
+## Run Locally
+
+To start the server run the following command
+
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you would like the app to run on a different port you can pass the port argument to the command
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm run dev -- -p 3005
+```
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+All reusable components should be added to the `src/components` directory. It has already been populated with components provided by the [Catalyst UI Kit](https://catalyst.tailwindui.com/docs).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Layout and Page components components shall be added to the `src/app` directory. Please take a look at the [Next.js docs](https://nextjs.org/docs/app/getting-started/layouts-and-pages) to learn the difference between Layout and Page components and how to create each one.
